@@ -1,5 +1,7 @@
 # What are RESTFUL Web Services
 
+See <a href="http://stackoverflow.com/questions/671118/what-exactly-is-restful-programming">this StackOverflow link</a> for details.
+
 <b>RESTful web services</b> are built to work best on the Web. Representational State Transfer (REST) is an <u>architectural style</u> that specifies <u>constraints</u>. If applied to a web service, these constraints induce desirable properties, such as performance, scalability, and modifiability, that enable services to work best on the Web. 
 
 There are a few important constraints in the REST architectural style:
