@@ -12,9 +12,15 @@ curl -H "Content-Type: application/json" -X GET http://localhost:8080/api/custom
 
 2. Retrieve one customer
 
+```shell
+curl -H "Content-Type: application/json" -X GET http://localhost:8080/api/customer/1
+```
+
 ![postman](imgs/unsec-get-one.png)
 
 3. Retrieve an unknown customer
+
+curl -H "Content-Type: application/json" -X GET http://localhost:8080/api/customer/45
 
 ![postman](imgs/unsec-get-not-found.png)
 
