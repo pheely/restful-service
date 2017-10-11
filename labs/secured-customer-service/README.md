@@ -4,7 +4,7 @@
 
 1. Retrieve all customers
 
-'''
+```
 curl -H "Content-Type: application/json" -X GET http://localhost:8080/api/customer/
 ```
 
