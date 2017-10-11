@@ -4,6 +4,10 @@
 
 1. Retrieve all customers
 
+'''
+curl -H "Content-Type: application/json" -X GET http://localhost:8080/api/customer/
+```
+
 ![postman](imgs/unsec-get-all.png)
 
 2. Retrieve one customer
