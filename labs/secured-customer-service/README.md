@@ -20,8 +20,9 @@ curl -H "Content-Type: application/json" -X GET http://localhost:8080/api/custom
 
 3. Retrieve an unknown customer
 
+```python
 curl -H "Content-Type: application/json" -X GET http://localhost:8080/api/customer/45
-
+```
 ![postman](imgs/unsec-get-not-found.png)
 
 4. Create a customer
