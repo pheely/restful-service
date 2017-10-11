@@ -4,4 +4,4 @@
 
 1. Retrieve all customers
 
-![GET all](/imgs/unsec-get-all.png)
+(/imgs/unsec-get-all.png)
