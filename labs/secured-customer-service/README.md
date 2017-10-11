@@ -4,4 +4,4 @@
 
 1. Retrieve all customers
 
-(/imgs/unsec-get-all.png)
+![postman](/imgs/unsec-get-all.png)
