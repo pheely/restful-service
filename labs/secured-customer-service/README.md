@@ -182,3 +182,57 @@ public class CustomBasicAuthenticationEntryPoint extends BasicAuthenticationEntr
     }
 }
 ```
+
+## Test Basic Authentication Using curl
+
+1. Retrieve all customers
+
+```shell
+curl -H "Content-Type: application/json" -H "Authorization: Basic YmlsbDphYmMxMjM=" -X GET http://localhost:8080/api/customer/
+```
+
+2. Retrieve one customer
+
+```shell
+curl -H "Content-Type: application/json" -H "Authorization: Basic YmlsbDphYmMxMjM=" -X GET http://localhost:8080/api/customer/1
+```
+
+3. Retrieve an unknown customer
+
+```python
+curl -H "Content-Type: application/json" -H "Authorization: Basic YmlsbDphYmMxMjM=" -X GET http://localhost:8080/api/customer/45
+```
+
+4. Create a customer
+
+```shell
+curl -H "Content-Type: application/json" -H "Authorization: Basic YmlsbDphYmMxMjM=" -X POST \
+-d '{"name": "Pheely", "age": 51, "salary": 11000}' \
+http://localhost:8080/api/customer/
+```
+
+5. Verify the created customer
+
+```shell
+curl -H "Content-Type: application/json" -H "Authorization: Basic YmlsbDphYmMxMjM=" -X GET http://localhost:8080/api/customer/5
+```
+
+6. Update a customer
+
+```shell
+curl -H "Content-Type: application/json" -H "Authorization: Basic YmlsbDphYmMxMjM=" -X PUT \
+-d '{"name": "Pheely", "age": 51, "salary": 1}' \
+http://localhost:8080/api/customer/5
+```
+
+7. Delete a customer
+
+```shell
+curl -H "Content-Type: application/json" -H "Authorization: Basic YmlsbDphYmMxMjM=" -X DELETE http://localhost:8080/api/customer/5
+```
+
+8. Delete all customers
+
+```shell
+curl -H "Content-Type: application/json" -H "Authorization: Basic YmlsbDphYmMxMjM=" -X DELETE http://localhost:8080/api/customer/
+```
