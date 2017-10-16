@@ -1,0 +1,7 @@
+---
+applications:
+- name: tcs-gui
+  memory: 1024M
+  buildpack: java_buildpack
+  routes:
+  - route: tcs-gui.cfapps.io
